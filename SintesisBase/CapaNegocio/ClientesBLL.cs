@@ -25,7 +25,7 @@ namespace SintesisBase.CapaNegocio
             if (string.IsNullOrWhiteSpace(c.Nombre))
                 throw new Exception("El Nombre del Cliente es obligatorio");
 
-            if (c.Telefono.Length == 8)
+            if (c.Telefono.Length  <= 8)
                 throw new Exception("El telefono no debe superar 8 digitos");
 
             if (c.Id == 0)
