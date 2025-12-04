@@ -49,6 +49,7 @@
     <Compile Include="CapaDatos\ClientesDAL.cs" />
     <Compile Include="CapaDatos\Conexion.cs" />
     <Compile Include="CapaDatos\MarcaDAL.cs" />
+    <Compile Include="CapaDatos\ProveedorDAL.cs" />
     <Compile Include="CapaEntidades\Compra.cs" />
     <Compile Include="CapaEntidades\CompraItem.cs" />
     <Compile Include="CapaEntidades\EstadoActual.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="CapaEntidades\VentaItem.cs" />
     <Compile Include="CapaNegocio\ClientesBLL.cs" />
     <Compile Include="CapaNegocio\MarcaBLL.cs" />
+    <Compile Include="CapaNegocio\ProveedorBLL.cs" />
     <Compile Include="CapaRepresentacion\FrmAgregarC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +153,12 @@
     <Compile Include="CapaRepresentacion\FrmUserName.Designer.cs">
       <DependentUpon>FrmUserName.cs</DependentUpon>
     </Compile>
+    <Compile Include="CapaRepresentacion\GestionProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\GestionProveedor.Designer.cs">
+      <DependentUpon>GestionProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaRepresentacion\Iniciar sesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +170,9 @@
     <EmbeddedResource Include="CapaRepresentacion\FrmAgregarC.resx">
       <DependentUpon>FrmAgregarC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmAgregarM.resx">
+      <DependentUpon>FrmAgregarM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CapaRepresentacion\FrmAgregarPP.resx">
       <DependentUpon>FrmAgregarPP.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaRepresentacion\FrmClientes.resx">
       <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmEliminarM.resx">
+      <DependentUpon>FrmEliminarM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaRepresentacion\FrmInventario.resx">
       <DependentUpon>FrmInventario.cs</DependentUpon>
@@ -194,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaRepresentacion\FrmUserName.resx">
       <DependentUpon>FrmUserName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\GestionProveedor.resx">
+      <DependentUpon>GestionProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaRepresentacion\Iniciar sesion.resx">
       <DependentUpon>Iniciar sesion.cs</DependentUpon>

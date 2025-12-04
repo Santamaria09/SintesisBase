@@ -9,7 +9,7 @@ namespace SintesisBase.CapaEntidades
     public class Marca
     {
         public int Id { get; set; }
-        public string Nombre { get; set; }
+        public string Modelo { get; set; }
         public int Id_Proveedor { get; set; }
     }
 }

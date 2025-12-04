@@ -31,8 +31,7 @@ namespace SintesisBase
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            FrmProducto frm = new FrmProducto();
-            frm.Show();
+            
         }
 
         private void btnInventario_Click(object sender, EventArgs e)

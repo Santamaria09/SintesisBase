@@ -1,0 +1,165 @@
+﻿namespace SintesisBase.CapaRepresentacion
+{
+    partial class GestionProveedor
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.dvgProveedor = new System.Windows.Forms.DataGridView();
+            this.txtBuscarM = new System.Windows.Forms.TextBox();
+            this.lblBuscar = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnVolverM = new System.Windows.Forms.Button();
+            this.btnAgregarM = new System.Windows.Forms.Button();
+            this.btnEliminarM = new System.Windows.Forms.Button();
+            this.btnEditarM = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgProveedor)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // dvgProveedor
+            // 
+            this.dvgProveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgProveedor.Location = new System.Drawing.Point(108, 116);
+            this.dvgProveedor.Name = "dvgProveedor";
+            this.dvgProveedor.ReadOnly = true;
+            this.dvgProveedor.Size = new System.Drawing.Size(580, 190);
+            this.dvgProveedor.TabIndex = 0;
+            // 
+            // txtBuscarM
+            // 
+            this.txtBuscarM.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscarM.Location = new System.Drawing.Point(328, 70);
+            this.txtBuscarM.Name = "txtBuscarM";
+            this.txtBuscarM.Size = new System.Drawing.Size(297, 29);
+            this.txtBuscarM.TabIndex = 8;
+            // 
+            // lblBuscar
+            // 
+            this.lblBuscar.AutoSize = true;
+            this.lblBuscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscar.Location = new System.Drawing.Point(186, 73);
+            this.lblBuscar.Name = "lblBuscar";
+            this.lblBuscar.Size = new System.Drawing.Size(71, 21);
+            this.lblBuscar.TabIndex = 9;
+            this.lblBuscar.Text = "Nombre:";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel1.Controls.Add(this.btnVolverM);
+            this.panel1.Controls.Add(this.btnAgregarM);
+            this.panel1.Controls.Add(this.btnEliminarM);
+            this.panel1.Controls.Add(this.btnEditarM);
+            this.panel1.Location = new System.Drawing.Point(108, 322);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(580, 97);
+            this.panel1.TabIndex = 10;
+            // 
+            // btnVolverM
+            // 
+            this.btnVolverM.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolverM.Location = new System.Drawing.Point(437, 22);
+            this.btnVolverM.Name = "btnVolverM";
+            this.btnVolverM.Size = new System.Drawing.Size(123, 45);
+            this.btnVolverM.TabIndex = 5;
+            this.btnVolverM.Text = "Regresar";
+            this.btnVolverM.UseVisualStyleBackColor = true;
+            // 
+            // btnAgregarM
+            // 
+            this.btnAgregarM.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarM.Location = new System.Drawing.Point(21, 22);
+            this.btnAgregarM.Name = "btnAgregarM";
+            this.btnAgregarM.Size = new System.Drawing.Size(123, 45);
+            this.btnAgregarM.TabIndex = 2;
+            this.btnAgregarM.Text = "Agregar";
+            this.btnAgregarM.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminarM
+            // 
+            this.btnEliminarM.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarM.Location = new System.Drawing.Point(297, 22);
+            this.btnEliminarM.Name = "btnEliminarM";
+            this.btnEliminarM.Size = new System.Drawing.Size(123, 45);
+            this.btnEliminarM.TabIndex = 4;
+            this.btnEliminarM.Text = "Eliminar";
+            this.btnEliminarM.UseVisualStyleBackColor = true;
+            // 
+            // btnEditarM
+            // 
+            this.btnEditarM.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarM.Location = new System.Drawing.Point(159, 21);
+            this.btnEditarM.Name = "btnEditarM";
+            this.btnEditarM.Size = new System.Drawing.Size(123, 46);
+            this.btnEditarM.TabIndex = 3;
+            this.btnEditarM.Text = "Actualizar";
+            this.btnEditarM.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(276, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(247, 25);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "GESTION DE PROVEEDORES";
+            // 
+            // GestionProveedor
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lblBuscar);
+            this.Controls.Add(this.txtBuscarM);
+            this.Controls.Add(this.dvgProveedor);
+            this.Name = "GestionProveedor";
+            this.Text = "GestionProveedor";
+            this.Load += new System.EventHandler(this.GestionProveedor_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dvgProveedor)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.DataGridView dvgProveedor;
+        private System.Windows.Forms.TextBox txtBuscarM;
+        private System.Windows.Forms.Label lblBuscar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnVolverM;
+        private System.Windows.Forms.Button btnAgregarM;
+        private System.Windows.Forms.Button btnEliminarM;
+        private System.Windows.Forms.Button btnEditarM;
+        private System.Windows.Forms.Label label1;
+    }
+}

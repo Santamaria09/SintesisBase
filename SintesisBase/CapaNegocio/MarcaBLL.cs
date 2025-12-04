@@ -21,7 +21,7 @@ namespace SintesisBase.CapaNegocio
 
         public int Guardar( Marca m)
         {
-            if (string.IsNullOrWhiteSpace(m.Nombre))
+            if (string.IsNullOrWhiteSpace(m.Modelo))
                 throw new Exception("Debe ingresar el nombre de una marca");
             if (m.Id == 0)
             {
@@ -35,6 +35,18 @@ namespace SintesisBase.CapaNegocio
                 return m.Id;
 
             }
+        }
+        public bool Eliminar(int id)
+        {
+            return dal.Eliminar(id);
+
+            MessageBox.Show("Registro eliminado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+        }
+        public DataTable Buscar(string filtro)
+        {
+            return dal.Buscar(filtro);
+
         }
     }
 }

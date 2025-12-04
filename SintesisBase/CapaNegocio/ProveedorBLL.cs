@@ -10,52 +10,44 @@ using System.Windows.Forms;
 
 namespace SintesisBase.CapaNegocio
 {
-    public class ClientesBLL
+    public class ProveedorBLL
     {
-        ClientesDAL dal = new ClientesDAL();
-
+        ProveedorDAL dal = new ProveedorDAL();
         public DataTable Listar()
         {
             return dal.Listar();
 
         }
-
-        public int Guardar(Clientes c)
+        public int Guardar(Proveedor p)
         {
-            if (string.IsNullOrWhiteSpace(c.Nombre))
-                throw new Exception("El Nombre del Cliente es obligatorio");
+            if (string.IsNullOrWhiteSpace(p.Nombre))
+                throw new Exception("El nombre del proveedor es obligatorio");
 
-            if (c.Telefono.Length  <= 8)
+            if (p.TelefonoEmpresa.Length <= 8)
                 throw new Exception("El telefono no debe superar 8 digitos");
 
-            if (c.Id == 0)
+            if (p.Id == 0)
             {
-               
 
-                MessageBox.Show("Cliente registrado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return dal.Insertar(c);
+
+                MessageBox.Show("Proveedor registrado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return dal.Insertar(p);
             }
             else
             {
-                dal.Actualizar(c);
+                dal.Actualizar(p);
                 MessageBox.Show("El registro ha sido actualizado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return c.Id;
-    
-            }
-        }
+                return p.Id;
 
-        public bool Eliminar(int Id)
+            }
+
+        }
+        public bool Eliminar(int id)
         {
-            return dal.Eliminar(Id);
+            return dal.Eliminar(id);
 
             MessageBox.Show("Registro eliminado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
-
-        }
-
-        public DataTable Buscar(string Filtro)
-        {
-            return dal.Buscar(Filtro);
 
         }
     }

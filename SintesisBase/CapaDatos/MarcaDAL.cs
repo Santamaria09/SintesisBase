@@ -14,29 +14,28 @@ namespace SintesisBase.CapaDatos
     {
         public DataTable Listar()
         {
-            DataTable Tabla = new DataTable();
+            DataTable dt = new DataTable();
             using (SqlConnection con = new SqlConnection(Conexion.Cadena))
             {
-                string sql = @"SELECT m.Nombre, p.Nombre, p.NombreEmpresa as Proveedor FROM Marca m INNER JOIN Proveedor p on m.Id_Proveedor= p.Id;";
+                string sql = "SELECT Id, Modelo, Id_Proveedor FROM Marca";
                 using (SqlCommand cmd = new SqlCommand(sql, con))
                 {
                     con.Open();
-                    using (SqlDataReader dr = cmd.ExecuteReader())
-                    {
-                        Tabla.Load(dr);
-                    }
+                    new SqlDataAdapter(cmd).Fill(dt);
                 }
             }
-            return Tabla;
+            return dt;
+
         }
+        
         public int Insertar(Marca m)
         {
             using (SqlConnection con = new SqlConnection(Conexion.Cadena))
             {
-                string sql = "INSERT INTO Marca (Nombre, Id_Proveedor) values (@nombre, @id_proveedor); SELECT SCOPE_IDENTITY();";
+                string sql = "INSERT INTO Marca (Modelo, Id_Proveedor) values (@modelo, @id_proveedor); SELECT SCOPE_IDENTITY();";
                 using (SqlCommand cmd = new SqlCommand(sql, con))
                 {
-                    cmd.Parameters.AddWithValue("@nombre", m.Nombre);
+                    cmd.Parameters.AddWithValue("@modelo", m.Modelo);
                     cmd.Parameters.AddWithValue("@id_proveedor", m.Id_Proveedor);
                     con.Open();
                     return Convert.ToInt32(cmd.ExecuteScalar());
@@ -49,12 +48,13 @@ namespace SintesisBase.CapaDatos
         {
             using (SqlConnection con = new SqlConnection(Conexion.Cadena))
             {
-                string sql = "UPDATE Marca SET Nombre=@nombre, Id_Proveedor =@id_proveedor WHERE Id=@id;";
+                string sql = "UPDATE Marca SET Modelo=@modelo, Id_Proveedor =@id_proveedor WHERE Id=@id;";
                 using (SqlCommand cmd = new SqlCommand(sql, con))
                 {
                     cmd.Parameters.AddWithValue("@id", m.Id);
-                    cmd.Parameters.AddWithValue("@nombre", m.Nombre);
-                    cmd.Parameters.AddWithValue("@telefono", m.Id_Proveedor);
+                    cmd.Parameters.AddWithValue("@modelo", m.Modelo);
+                    cmd.Parameters.AddWithValue("@id_proveedor", m.Id_Proveedor);
+                    con.Open();
                     return cmd.ExecuteNonQuery() > 0;
                 }
             }
@@ -79,7 +79,7 @@ namespace SintesisBase.CapaDatos
             DataTable dt = new DataTable();
             using (SqlConnection con = new SqlConnection(Conexion.Cadena))
             {
-                string sql = @"SELECT m.Nombre, p.NombreEmpresa as Proveedor FROM Marca m INNER JOIN Proveedor p on m.Id_Proveedor= p.Id WHERE m.Nombre LIKE @Filtro;";
+                string sql= @"SELECT Id, Modelo, Id_Proveedor FROM Marca WHERE Modelo LIKE @Filtro;";
                 using (SqlCommand cmd = new SqlCommand(sql, con))
                 {
                     cmd.Parameters.AddWithValue("@Filtro", "%" + filtro + "%");
