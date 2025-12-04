@@ -69,7 +69,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(124, 126);
+            this.textBox1.Location = new System.Drawing.Point(111, 126);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(180, 29);
             this.textBox1.TabIndex = 3;
@@ -93,7 +93,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::SintesisBase.Properties.Resources.usuario__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(343, 115);
+            this.pictureBox2.Location = new System.Drawing.Point(341, 111);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(156, 169);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
