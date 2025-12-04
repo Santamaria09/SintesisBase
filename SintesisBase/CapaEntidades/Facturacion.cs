@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace SintesisBase.CapaEntidades
 {
-    public class Marca
+    public class Facturacion
     {
         public int Id { get; set; }
-        public string Modelo { get; set; }
-        public int Id_Proveedor { get; set; }
+        public int Id_Venta { get; set; }
+        public decimal Fecha { get; set; }
+
     }
 }

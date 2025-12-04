@@ -39,7 +39,7 @@ namespace SintesisBase.CapaRepresentacion
             }
             else
             {
-                lblTitulo.Text = "MODIFICAR CATEGORIA";
+                lblTitulo.Text = "MODIFICAR ClIENTE";
                 txtNombreCC.Text = Nombre;
                 txtTelefonoCC.Text = Telefono;
                 txtDireccionCC.Text = Direccion;
