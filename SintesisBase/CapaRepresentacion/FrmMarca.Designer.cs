@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.dvgMarcas = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnAgregarM = new System.Windows.Forms.Button();
             this.btnEditarM = new System.Windows.Forms.Button();
             this.btnEliminarM = new System.Windows.Forms.Button();
@@ -37,6 +36,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtBuscarM = new System.Windows.Forms.TextBox();
             this.lblBuscar = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dvgMarcas)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,16 +52,6 @@
             this.dvgMarcas.Size = new System.Drawing.Size(426, 291);
             this.dvgMarcas.TabIndex = 0;
             this.dvgMarcas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgMarcas_CellClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(230, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "MARCAS RELACIONADAS";
             // 
             // btnAgregarM
             // 
@@ -137,6 +127,18 @@
             this.lblBuscar.Size = new System.Drawing.Size(71, 21);
             this.lblBuscar.TabIndex = 8;
             this.lblBuscar.Text = "Nombre:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Image = global::SintesisBase.Properties.Resources.techo_de_personas;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label1.Location = new System.Drawing.Point(230, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(256, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "MARCAS RELACIONADAS      ";
             // 
             // FrmMarca
             // 

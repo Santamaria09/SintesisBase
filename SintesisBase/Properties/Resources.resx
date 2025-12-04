@@ -124,4 +124,13 @@
   <data name="papel-de-registro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\papel-de-registro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="entrega" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\entrega.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="basura-mas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\basura-mas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="techo-de-personas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\techo-de-personas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

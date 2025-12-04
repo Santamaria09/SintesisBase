@@ -28,24 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTituloM = new System.Windows.Forms.Label();
             this.txtNM = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnGuardarCC = new System.Windows.Forms.Button();
             this.btnCancelarCC = new System.Windows.Forms.Button();
             this.txtMP = new System.Windows.Forms.TextBox();
+            this.lblTituloM = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // lblTituloM
-            // 
-            this.lblTituloM.AutoSize = true;
-            this.lblTituloM.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloM.Location = new System.Drawing.Point(387, 39);
-            this.lblTituloM.Name = "lblTituloM";
-            this.lblTituloM.Size = new System.Drawing.Size(76, 25);
-            this.lblTituloM.TabIndex = 18;
-            this.lblTituloM.Text = "MARCA";
             // 
             // txtNM
             // 
@@ -108,6 +98,18 @@
             this.txtMP.Name = "txtMP";
             this.txtMP.Size = new System.Drawing.Size(136, 29);
             this.txtMP.TabIndex = 25;
+            // 
+            // lblTituloM
+            // 
+            this.lblTituloM.AutoSize = true;
+            this.lblTituloM.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloM.Image = global::SintesisBase.Properties.Resources.entrega;
+            this.lblTituloM.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblTituloM.Location = new System.Drawing.Point(387, 39);
+            this.lblTituloM.Name = "lblTituloM";
+            this.lblTituloM.Size = new System.Drawing.Size(116, 25);
+            this.lblTituloM.TabIndex = 18;
+            this.lblTituloM.Text = "MARCA        ";
             // 
             // FrmAgregarM
             // 

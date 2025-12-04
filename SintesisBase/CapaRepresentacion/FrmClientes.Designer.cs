@@ -64,7 +64,7 @@
             // txtBuscarC
             // 
             this.txtBuscarC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarC.Location = new System.Drawing.Point(278, 72);
+            this.txtBuscarC.Location = new System.Drawing.Point(261, 75);
             this.txtBuscarC.Name = "txtBuscarC";
             this.txtBuscarC.Size = new System.Drawing.Size(297, 29);
             this.txtBuscarC.TabIndex = 2;
@@ -132,7 +132,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Image = global::SintesisBase.Properties.Resources.papel_de_registro;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Location = new System.Drawing.Point(273, 27);
+            this.label1.Location = new System.Drawing.Point(273, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(203, 25);
             this.label1.TabIndex = 7;

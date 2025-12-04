@@ -32,9 +32,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMID = new System.Windows.Forms.TextBox();
-            this.lblTitulo = new System.Windows.Forms.Label();
             this.btnEM = new System.Windows.Forms.Button();
             this.btnCancelarCC = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtME
@@ -73,16 +73,6 @@
             this.txtMID.Size = new System.Drawing.Size(92, 29);
             this.txtMID.TabIndex = 15;
             // 
-            // lblTitulo
-            // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(306, 41);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(164, 25);
-            this.lblTitulo.TabIndex = 18;
-            this.lblTitulo.Text = "ELIMINAR MARCA";
-            // 
             // btnEM
             // 
             this.btnEM.BackColor = System.Drawing.Color.MidnightBlue;
@@ -107,6 +97,18 @@
             this.btnCancelarCC.TabIndex = 20;
             this.btnCancelarCC.Text = "Cancelar";
             this.btnCancelarCC.UseVisualStyleBackColor = false;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Image = global::SintesisBase.Properties.Resources.basura_mas;
+            this.lblTitulo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblTitulo.Location = new System.Drawing.Point(306, 41);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(214, 25);
+            this.lblTitulo.TabIndex = 18;
+            this.lblTitulo.Text = "ELIMINAR MARCA          ";
             // 
             // FrmEliminarM
             // 

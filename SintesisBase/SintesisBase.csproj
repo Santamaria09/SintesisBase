@@ -253,5 +253,14 @@
   <ItemGroup>
     <None Include="Resources\papel-de-registro.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrega.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basura-mas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\techo-de-personas.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
