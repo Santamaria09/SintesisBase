@@ -48,6 +48,10 @@ namespace SintesisBase.CapaNegocio
 
             MessageBox.Show("Registro eliminado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
+        }
+        public DataTable Buscar(string filtro)
+        {
+            return dal.Buscar(filtro);
 
         }
     }

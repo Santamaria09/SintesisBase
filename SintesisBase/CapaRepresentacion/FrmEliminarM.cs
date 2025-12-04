@@ -37,7 +37,7 @@ namespace SintesisBase.CapaRepresentacion
 
             try
             {
-                var r = MessageBox.Show($"¿Estas seguro que desea eliminar la marca" , "Confirmar eliminacion",
+                var r = MessageBox.Show("¿Estas seguro que desea eliminar la marca" , "Confirmar eliminacion",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
                 if (r == DialogResult.No)
                     return;

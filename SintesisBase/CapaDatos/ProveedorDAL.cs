@@ -79,6 +79,21 @@ namespace SintesisBase.CapaDatos
             }
 
         }
+        public DataTable Buscar(string filtro)
+        {
+            DataTable dt = new DataTable();
+            using (SqlConnection con = new SqlConnection(Conexion.Cadena))
+            {
+                string sql = @"SELECT Id, Nombre, TelefonoEmpresa, Direccion, NombreEmpresa FROM Proveedor WHERE Nombre LIKE @Filtro OR NombreEmpresa LIKE @Filtro;";
+                using (SqlCommand cmd = new SqlCommand(sql, con))
+                {
+                    cmd.Parameters.AddWithValue("@Filtro", "%" + filtro + "%");
+                    con.Open();
+                    new SqlDataAdapter(cmd).Fill(dt);
+                    return dt;
+                }
+            }
+        }
         public static List<Proveedor> CatalogoProveedores(int id, string NombreEmpresa)
         {
             List<Proveedor> Lista = new List<Proveedor>();

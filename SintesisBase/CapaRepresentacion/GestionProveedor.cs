@@ -89,11 +89,32 @@ namespace SintesisBase.CapaRepresentacion
             FrmProveedorE frm = new FrmProveedorE();
 
             frm.Id = ProveedorId;
-            frm.Modelo = dvgMarcas.CurrentRow.Cells["Modelo"].Value.ToString();
-            frm.Id_Proveedor = Convert.ToInt32(dvgMarcas.CurrentRow.Cells["Id_Proveedor"].Value);
+
+            frm.Nombre = dvgProveedor.CurrentRow.Cells["Nombre"].Value.ToString();
+            frm.TelefonoEmpresa = dvgProveedor.CurrentRow.Cells["TelefonoEmpresa"].Value.ToString();
+            frm.Direccion = dvgProveedor.CurrentRow.Cells["Direccion"].Value.ToString();
+            frm.NombreEmpresa = dvgProveedor.CurrentRow.Cells["NombreEmpresa"].Value.ToString();
 
             frm.ShowDialog();
             CargarDatos();
+        }
+
+        private void txtBp_TextChanged(object sender, EventArgs e)
+        {
+            dvgProveedor.DataSource = bll.Buscar(txtBp.Text);
+        }
+
+        private void dvgProveedor_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                ProveedorId = Convert.ToInt32(dvgProveedor.Rows[e.RowIndex].Cells["Id"].Value);
+            }
+        }
+
+        private void btnVp_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

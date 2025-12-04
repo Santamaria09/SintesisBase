@@ -36,19 +36,21 @@
             this.btnAp = new System.Windows.Forms.Button();
             this.btnEpp = new System.Windows.Forms.Button();
             this.btnEp = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.l = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dvgProveedor)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dvgProveedor
             // 
+            this.dvgProveedor.AllowUserToAddRows = false;
             this.dvgProveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgProveedor.Location = new System.Drawing.Point(108, 116);
             this.dvgProveedor.Name = "dvgProveedor";
             this.dvgProveedor.ReadOnly = true;
             this.dvgProveedor.Size = new System.Drawing.Size(580, 190);
             this.dvgProveedor.TabIndex = 0;
+            this.dvgProveedor.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgProveedor_CellClick);
             // 
             // txtBp
             // 
@@ -57,6 +59,7 @@
             this.txtBp.Name = "txtBp";
             this.txtBp.Size = new System.Drawing.Size(297, 29);
             this.txtBp.TabIndex = 8;
+            this.txtBp.TextChanged += new System.EventHandler(this.txtBp_TextChanged);
             // 
             // lblBuscar
             // 
@@ -89,6 +92,7 @@
             this.btnVp.TabIndex = 5;
             this.btnVp.Text = "Regresar";
             this.btnVp.UseVisualStyleBackColor = true;
+            this.btnVp.Click += new System.EventHandler(this.btnVp_Click);
             // 
             // btnAp
             // 
@@ -123,22 +127,22 @@
             this.btnEp.UseVisualStyleBackColor = true;
             this.btnEp.Click += new System.EventHandler(this.btnEp_Click);
             // 
-            // label1
+            // l
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(276, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 25);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "GESTION DE PROVEEDORES";
+            this.l.AutoSize = true;
+            this.l.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l.Location = new System.Drawing.Point(276, 26);
+            this.l.Name = "l";
+            this.l.Size = new System.Drawing.Size(247, 25);
+            this.l.TabIndex = 11;
+            this.l.Text = "GESTION DE PROVEEDORES";
             // 
             // GestionProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.l);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.txtBp);
@@ -163,6 +167,6 @@
         private System.Windows.Forms.Button btnAp;
         private System.Windows.Forms.Button btnEpp;
         private System.Windows.Forms.Button btnEp;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label l;
     }
 }
