@@ -1,5 +1,4 @@
-﻿using SintesisBase.CapaNegocio;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,32 +10,20 @@ using System.Windows.Forms;
 
 namespace SintesisBase.CapaRepresentacion
 {
-    public partial class FrmProveedor : Form
+    public partial class FrmProveedorE : Form
     {
-        public string Modo {  get; set; }
+        public string Modo { get; set; }
         public int Id { get; set; }
         public string Nombre { get; set; }
         public string TelefonoEmpresa { get; set; }
         public string Direccion { get; set; }
         public string NombreEmpresa { get; set; }
-
-        ProveedorBLL bll = new ProveedorBLL();
-        public FrmProveedor()
+        public FrmProveedorE()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmProveedor_Load(object sender, EventArgs e)
+        private void FrmProveedorE_Load(object sender, EventArgs e)
         {
 
         }

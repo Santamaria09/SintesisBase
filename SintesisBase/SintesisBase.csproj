@@ -135,6 +135,12 @@
     <Compile Include="CapaRepresentacion\FrmProveedor.Designer.cs">
       <DependentUpon>FrmProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="CapaRepresentacion\FrmProveedorE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmProveedorE.Designer.cs">
+      <DependentUpon>FrmProveedorE.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaRepresentacion\FrmRegistrarVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaRepresentacion\FrmProveedor.resx">
       <DependentUpon>FrmProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmProveedorE.resx">
+      <DependentUpon>FrmProveedorE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaRepresentacion\FrmRegistrarVenta.resx">
       <DependentUpon>FrmRegistrarVenta.cs</DependentUpon>

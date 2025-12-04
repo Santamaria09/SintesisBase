@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.dvgProveedor = new System.Windows.Forms.DataGridView();
-            this.txtBuscarM = new System.Windows.Forms.TextBox();
+            this.txtBp = new System.Windows.Forms.TextBox();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnVolverM = new System.Windows.Forms.Button();
-            this.btnAgregarM = new System.Windows.Forms.Button();
-            this.btnEliminarM = new System.Windows.Forms.Button();
-            this.btnEditarM = new System.Windows.Forms.Button();
+            this.btnVp = new System.Windows.Forms.Button();
+            this.btnAp = new System.Windows.Forms.Button();
+            this.btnEpp = new System.Windows.Forms.Button();
+            this.btnEp = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dvgProveedor)).BeginInit();
             this.panel1.SuspendLayout();
@@ -50,13 +50,13 @@
             this.dvgProveedor.Size = new System.Drawing.Size(580, 190);
             this.dvgProveedor.TabIndex = 0;
             // 
-            // txtBuscarM
+            // txtBp
             // 
-            this.txtBuscarM.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscarM.Location = new System.Drawing.Point(328, 70);
-            this.txtBuscarM.Name = "txtBuscarM";
-            this.txtBuscarM.Size = new System.Drawing.Size(297, 29);
-            this.txtBuscarM.TabIndex = 8;
+            this.txtBp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBp.Location = new System.Drawing.Point(328, 70);
+            this.txtBp.Name = "txtBp";
+            this.txtBp.Size = new System.Drawing.Size(297, 29);
+            this.txtBp.TabIndex = 8;
             // 
             // lblBuscar
             // 
@@ -71,54 +71,57 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel1.Controls.Add(this.btnVolverM);
-            this.panel1.Controls.Add(this.btnAgregarM);
-            this.panel1.Controls.Add(this.btnEliminarM);
-            this.panel1.Controls.Add(this.btnEditarM);
+            this.panel1.Controls.Add(this.btnVp);
+            this.panel1.Controls.Add(this.btnAp);
+            this.panel1.Controls.Add(this.btnEpp);
+            this.panel1.Controls.Add(this.btnEp);
             this.panel1.Location = new System.Drawing.Point(108, 322);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(580, 97);
             this.panel1.TabIndex = 10;
             // 
-            // btnVolverM
+            // btnVp
             // 
-            this.btnVolverM.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolverM.Location = new System.Drawing.Point(437, 22);
-            this.btnVolverM.Name = "btnVolverM";
-            this.btnVolverM.Size = new System.Drawing.Size(123, 45);
-            this.btnVolverM.TabIndex = 5;
-            this.btnVolverM.Text = "Regresar";
-            this.btnVolverM.UseVisualStyleBackColor = true;
+            this.btnVp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVp.Location = new System.Drawing.Point(437, 22);
+            this.btnVp.Name = "btnVp";
+            this.btnVp.Size = new System.Drawing.Size(123, 45);
+            this.btnVp.TabIndex = 5;
+            this.btnVp.Text = "Regresar";
+            this.btnVp.UseVisualStyleBackColor = true;
             // 
-            // btnAgregarM
+            // btnAp
             // 
-            this.btnAgregarM.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarM.Location = new System.Drawing.Point(21, 22);
-            this.btnAgregarM.Name = "btnAgregarM";
-            this.btnAgregarM.Size = new System.Drawing.Size(123, 45);
-            this.btnAgregarM.TabIndex = 2;
-            this.btnAgregarM.Text = "Agregar";
-            this.btnAgregarM.UseVisualStyleBackColor = true;
+            this.btnAp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAp.Location = new System.Drawing.Point(21, 22);
+            this.btnAp.Name = "btnAp";
+            this.btnAp.Size = new System.Drawing.Size(123, 45);
+            this.btnAp.TabIndex = 2;
+            this.btnAp.Text = "Agregar";
+            this.btnAp.UseVisualStyleBackColor = true;
+            this.btnAp.Click += new System.EventHandler(this.btnAp_Click);
             // 
-            // btnEliminarM
+            // btnEpp
             // 
-            this.btnEliminarM.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarM.Location = new System.Drawing.Point(297, 22);
-            this.btnEliminarM.Name = "btnEliminarM";
-            this.btnEliminarM.Size = new System.Drawing.Size(123, 45);
-            this.btnEliminarM.TabIndex = 4;
-            this.btnEliminarM.Text = "Eliminar";
-            this.btnEliminarM.UseVisualStyleBackColor = true;
+            this.btnEpp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEpp.Location = new System.Drawing.Point(297, 22);
+            this.btnEpp.Name = "btnEpp";
+            this.btnEpp.Size = new System.Drawing.Size(123, 45);
+            this.btnEpp.TabIndex = 4;
+            this.btnEpp.Text = "Eliminar";
+            this.btnEpp.UseVisualStyleBackColor = true;
+            this.btnEpp.Click += new System.EventHandler(this.btnEpp_Click);
             // 
-            // btnEditarM
+            // btnEp
             // 
-            this.btnEditarM.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarM.Location = new System.Drawing.Point(159, 21);
-            this.btnEditarM.Name = "btnEditarM";
-            this.btnEditarM.Size = new System.Drawing.Size(123, 46);
-            this.btnEditarM.TabIndex = 3;
-            this.btnEditarM.Text = "Actualizar";
-            this.btnEditarM.UseVisualStyleBackColor = true;
+            this.btnEp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEp.Location = new System.Drawing.Point(159, 21);
+            this.btnEp.Name = "btnEp";
+            this.btnEp.Size = new System.Drawing.Size(123, 46);
+            this.btnEp.TabIndex = 3;
+            this.btnEp.Text = "Actualizar";
+            this.btnEp.UseVisualStyleBackColor = true;
+            this.btnEp.Click += new System.EventHandler(this.btnEp_Click);
             // 
             // label1
             // 
@@ -138,7 +141,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblBuscar);
-            this.Controls.Add(this.txtBuscarM);
+            this.Controls.Add(this.txtBp);
             this.Controls.Add(this.dvgProveedor);
             this.Name = "GestionProveedor";
             this.Text = "GestionProveedor";
@@ -153,13 +156,13 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dvgProveedor;
-        private System.Windows.Forms.TextBox txtBuscarM;
+        private System.Windows.Forms.TextBox txtBp;
         private System.Windows.Forms.Label lblBuscar;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnVolverM;
-        private System.Windows.Forms.Button btnAgregarM;
-        private System.Windows.Forms.Button btnEliminarM;
-        private System.Windows.Forms.Button btnEditarM;
+        private System.Windows.Forms.Button btnVp;
+        private System.Windows.Forms.Button btnAp;
+        private System.Windows.Forms.Button btnEpp;
+        private System.Windows.Forms.Button btnEp;
         private System.Windows.Forms.Label label1;
     }
 }
