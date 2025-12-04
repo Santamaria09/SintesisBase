@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SintesisBase
+namespace SintesisBase.CapaRepresentacion
 {
-    public partial class Form1 : Form
+    public partial class FrmDetalleVenta : Form
     {
-        public Form1()
+        public FrmDetalleVenta()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

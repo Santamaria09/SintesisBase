@@ -46,16 +46,147 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="CapaDatos\ClientesDAL.cs" />
+    <Compile Include="CapaDatos\Conexion.cs" />
+    <Compile Include="CapaDatos\MarcaDAL.cs" />
+    <Compile Include="CapaEntidades\Producto.cs" />
+    <Compile Include="CapaDatos\ProductoDAL.cs" />
+    <Compile Include="CapaEntidades\Clientes.cs" />
+    <Compile Include="CapaEntidades\Marca.cs" />
+    <Compile Include="CapaEntidades\Proveedor.cs" />
+    <Compile Include="CapaEntidades\Validaciones.cs" />
+    <Compile Include="CapaNegocio\ClientesBLL.cs" />
+    <Compile Include="CapaNegocio\MarcaBLL.cs" />
+    <Compile Include="CapaRepresentacion\FrmAgregarC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CapaRepresentacion\FrmAgregarC.Designer.cs">
+      <DependentUpon>FrmAgregarC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmAgregarM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmAgregarM.Designer.cs">
+      <DependentUpon>FrmAgregarM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmAgregarPP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmAgregarPP.Designer.cs">
+      <DependentUpon>FrmAgregarPP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmCierre de caja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmCierre de caja.Designer.cs">
+      <DependentUpon>FrmCierre de caja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmClientes.Designer.cs">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmInventario.Designer.cs">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmMarca.Designer.cs">
+      <DependentUpon>FrmMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmEliminarM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmEliminarM.Designer.cs">
+      <DependentUpon>FrmEliminarM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmDetalleVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmDetalleVenta.Designer.cs">
+      <DependentUpon>FrmDetalleVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmProveedor.Designer.cs">
+      <DependentUpon>FrmProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmRegistrarVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmRegistrarVenta.Designer.cs">
+      <DependentUpon>FrmRegistrarVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmReportes.Designer.cs">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmUserName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmUserName.Designer.cs">
+      <DependentUpon>FrmUserName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\Iniciar sesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\Iniciar sesion.Designer.cs">
+      <DependentUpon>Iniciar sesion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="CapaRepresentacion\FrmAgregarC.resx">
+      <DependentUpon>FrmAgregarC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmAgregarPP.resx">
+      <DependentUpon>FrmAgregarPP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmCierre de caja.resx">
+      <DependentUpon>FrmCierre de caja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmInventario.resx">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmMarca.resx">
+      <DependentUpon>FrmMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmDetalleVenta.resx">
+      <DependentUpon>FrmDetalleVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmProveedor.resx">
+      <DependentUpon>FrmProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmRegistrarVenta.resx">
+      <DependentUpon>FrmRegistrarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmReportes.resx">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmUserName.resx">
+      <DependentUpon>FrmUserName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\Iniciar sesion.resx">
+      <DependentUpon>Iniciar sesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -79,5 +210,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
