@@ -8,7 +8,7 @@ namespace SintesisBase.CapaDatos
 {
     public  class Conexion
     {
-        public static string Cadena = @"Data Source =DESKTOP-F14TMAB\EXPRESSDAMA;
+        public static string Cadena = @"Data Source =RIGEL\SQLEXPRESS;
                             Initial Catalog = PUNTO_DISTRIBUCION_EMANUEL;
                             Integrated Security = True;";
     }
