@@ -141,5 +141,56 @@ namespace SintesisBase
             frmRegistrarVenta frm = new frmRegistrarVenta();
             frm.ShowDialog();
         }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void tsCambiarClave_Click(object sender, EventArgs e)
+        {
+            FrmCambiarClave frm = new FrmCambiarClave();
+            frm.ShowDialog();
+
+        }
+
+        private void lblUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUsuario_Click(object sender, EventArgs e)
+        {
+
+            if (frmUsuarios == null || frmUsuarios.IsDisposed)
+            {
+                frmUsuarios = new FrmGestionUsuarios();
+            }
+
+            frmUsuarios.Show();
+            frmUsuarios.BringToFront();
+
+        }
+
+        private void msGenerarReportes_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void btnReportePDF_Click(object sender, EventArgs e)
+        {
+            FrmReporteVentas frm = new FrmReporteVentas();
+            frm.ShowDialog();
+
+        }
+
+        private void btnReportePDFF_Click(object sender, EventArgs e)
+        {
+            FrmReporteCompras frm = new FrmReporteCompras();
+            frm.ShowDialog();
+
+        }
     }
 }
