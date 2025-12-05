@@ -58,20 +58,37 @@
     <Compile Include="CapaDatos\ClientesDAL.cs" />
     <Compile Include="CapaDatos\Conexion.cs" />
     <Compile Include="CapaDatos\MarcaDAL.cs" />
+<<<<<<< HEAD
     <Compile Include="CapaDatos\ReporteCompraDAL.cs" />
     <Compile Include="CapaDatos\ReporteVentaDAL.cs" />
     <Compile Include="CapaDatos\RolDAL.cs" />
     <Compile Include="CapaDatos\UsuarioDAL.cs" />
+=======
+    <Compile Include="CapaDatos\ProveedorDAL.cs" />
+    <Compile Include="CapaEntidades\Compra.cs" />
+    <Compile Include="CapaEntidades\CompraItem.cs" />
+    <Compile Include="CapaEntidades\EstadoActual.cs" />
+    <Compile Include="CapaEntidades\Facturacion.cs" />
+    <Compile Include="CapaEntidades\Inventario.cs" />
+>>>>>>> ff6efec38a99645fa5f9e927d723d56c90b2a31e
     <Compile Include="CapaEntidades\Producto.cs" />
     <Compile Include="CapaDatos\ProductoDAL.cs" />
     <Compile Include="CapaEntidades\Clientes.cs" />
     <Compile Include="CapaEntidades\Marca.cs" />
     <Compile Include="CapaEntidades\Proveedor.cs" />
+<<<<<<< HEAD
     <Compile Include="CapaEntidades\Seguridad.cs" />
+=======
+    <Compile Include="CapaEntidades\Rol.cs" />
+    <Compile Include="CapaEntidades\UnidadPeso.cs" />
+>>>>>>> ff6efec38a99645fa5f9e927d723d56c90b2a31e
     <Compile Include="CapaEntidades\Usuario.cs" />
     <Compile Include="CapaEntidades\Validaciones.cs" />
+    <Compile Include="CapaEntidades\Venta.cs" />
+    <Compile Include="CapaEntidades\VentaItem.cs" />
     <Compile Include="CapaNegocio\ClientesBLL.cs" />
     <Compile Include="CapaNegocio\MarcaBLL.cs" />
+<<<<<<< HEAD
     <Compile Include="CapaNegocio\ReporteComprasBLL.cs" />
     <Compile Include="CapaNegocio\ReporteVentasBLL.cs" />
     <Compile Include="CapaNegocio\RolBLL.cs" />
@@ -82,6 +99,9 @@
     <Compile Include="CapaRepresentacion\FrmActualizarUsuario.Designer.cs">
       <DependentUpon>FrmActualizarUsuario.cs</DependentUpon>
     </Compile>
+=======
+    <Compile Include="CapaNegocio\ProveedorBLL.cs" />
+>>>>>>> ff6efec38a99645fa5f9e927d723d56c90b2a31e
     <Compile Include="CapaRepresentacion\FrmAgregarC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +186,12 @@
     <Compile Include="CapaRepresentacion\FrmProveedor.Designer.cs">
       <DependentUpon>FrmProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="CapaRepresentacion\FrmProveedorE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmProveedorE.Designer.cs">
+      <DependentUpon>FrmProveedorE.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaRepresentacion\FrmRegistrarVenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,7 +210,17 @@
     <Compile Include="CapaRepresentacion\FrmReporteCompras.Designer.cs">
       <DependentUpon>FrmReporteCompras.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="CapaRepresentacion\FrmReporteVentas.cs">
+=======
+    <Compile Include="CapaRepresentacion\GestionProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\GestionProveedor.Designer.cs">
+      <DependentUpon>GestionProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaRepresentacion\Iniciar sesion.cs">
+>>>>>>> ff6efec38a99645fa5f9e927d723d56c90b2a31e
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CapaRepresentacion\FrmReporteVentas.Designer.cs">
@@ -204,6 +240,9 @@
     <EmbeddedResource Include="CapaRepresentacion\FrmAgregarC.resx">
       <DependentUpon>FrmAgregarC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmAgregarM.resx">
+      <DependentUpon>FrmAgregarM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CapaRepresentacion\FrmAgregarPP.resx">
       <DependentUpon>FrmAgregarPP.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,8 +255,13 @@
     <EmbeddedResource Include="CapaRepresentacion\FrmClientes.resx">
       <DependentUpon>FrmClientes.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="CapaRepresentacion\FrmGestionUsuarios.resx">
       <DependentUpon>FrmGestionUsuarios.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="CapaRepresentacion\FrmEliminarM.resx">
+      <DependentUpon>FrmEliminarM.cs</DependentUpon>
+>>>>>>> ff6efec38a99645fa5f9e927d723d56c90b2a31e
     </EmbeddedResource>
     <EmbeddedResource Include="CapaRepresentacion\FrmInventario.resx">
       <DependentUpon>FrmInventario.cs</DependentUpon>
@@ -237,6 +281,9 @@
     <EmbeddedResource Include="CapaRepresentacion\FrmProveedor.resx">
       <DependentUpon>FrmProveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\FrmProveedorE.resx">
+      <DependentUpon>FrmProveedorE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CapaRepresentacion\FrmRegistrarVenta.resx">
       <DependentUpon>FrmRegistrarVenta.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,8 +293,16 @@
     <EmbeddedResource Include="CapaRepresentacion\FrmReporteCompras.resx">
       <DependentUpon>FrmReporteCompras.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="CapaRepresentacion\FrmReporteVentas.resx">
       <DependentUpon>FrmReporteVentas.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="CapaRepresentacion\GestionProveedor.resx">
+      <DependentUpon>GestionProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaRepresentacion\Iniciar sesion.resx">
+      <DependentUpon>Iniciar sesion.cs</DependentUpon>
+>>>>>>> ff6efec38a99645fa5f9e927d723d56c90b2a31e
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -257,6 +312,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -272,7 +328,21 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\usuario %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papel-de-registro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrega.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basura-mas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\techo-de-personas.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\QuestPDF.2025.7.4\build\net4\QuestPDF.targets" Condition="Exists('..\packages\QuestPDF.2025.7.4\build\net4\QuestPDF.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

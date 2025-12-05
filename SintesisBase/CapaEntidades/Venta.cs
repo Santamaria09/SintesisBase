@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace SintesisBase.CapaEntidades
 {
-    public class Marca
+    public class Venta
     {
         public int Id { get; set; }
-        public string Modelo { get; set; }
-        public int Id_Proveedor { get; set; }
+        public decimal Total { get; set; }
+        public DateTime Fecha { get; set; }
+        public int Id_Cliente { get; set; }
+        public int Id_Usuario { get; set; }
+
     }
 }
