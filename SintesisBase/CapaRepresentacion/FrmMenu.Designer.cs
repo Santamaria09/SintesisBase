@@ -30,12 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnReportePDF = new System.Windows.Forms.Button();
+            this.btnReportePDFF = new System.Windows.Forms.Button();
             this.btnUsuario = new System.Windows.Forms.Button();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnReportePDF = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnCompras = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.btnVentas = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
             this.btnInventario = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.btnReportePDFF = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -67,23 +67,23 @@
             this.panel1.Size = new System.Drawing.Size(217, 450);
             this.panel1.TabIndex = 0;
             // 
-            // btnReportePDF
+            // btnReportePDFF
             // 
-            this.btnReportePDF.BackColor = System.Drawing.Color.White;
-            this.btnReportePDF.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnReportePDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReportePDF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportePDF.ForeColor = System.Drawing.Color.Black;
-            this.btnReportePDF.Image = ((System.Drawing.Image)(resources.GetObject("btnReportePDF.Image")));
-            this.btnReportePDF.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnReportePDF.Location = new System.Drawing.Point(16, 269);
-            this.btnReportePDF.Name = "btnReportePDF";
-            this.btnReportePDF.Size = new System.Drawing.Size(176, 54);
-            this.btnReportePDF.TabIndex = 10;
-            this.btnReportePDF.Text = " Reporte ventas";
-            this.btnReportePDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportePDF.UseVisualStyleBackColor = false;
-            this.btnReportePDF.Click += new System.EventHandler(this.btnReportePDF_Click);
+            this.btnReportePDFF.BackColor = System.Drawing.Color.White;
+            this.btnReportePDFF.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnReportePDFF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportePDFF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportePDFF.ForeColor = System.Drawing.Color.Black;
+            this.btnReportePDFF.Image = ((System.Drawing.Image)(resources.GetObject("btnReportePDFF.Image")));
+            this.btnReportePDFF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnReportePDFF.Location = new System.Drawing.Point(16, 337);
+            this.btnReportePDFF.Name = "btnReportePDFF";
+            this.btnReportePDFF.Size = new System.Drawing.Size(176, 55);
+            this.btnReportePDFF.TabIndex = 11;
+            this.btnReportePDFF.Text = "Reporte compras";
+            this.btnReportePDFF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReportePDFF.UseVisualStyleBackColor = false;
+            this.btnReportePDFF.Click += new System.EventHandler(this.btnReportePDFF_Click);
             // 
             // btnUsuario
             // 
@@ -114,22 +114,23 @@
             this.lblUsuario.Text = "label1";
             this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
             // 
-            // btnCerrar
+            // btnReportePDF
             // 
-            this.btnCerrar.BackColor = System.Drawing.Color.White;
-            this.btnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.ForeColor = System.Drawing.Color.Black;
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCerrar.Location = new System.Drawing.Point(507, 390);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(158, 38);
-            this.btnCerrar.TabIndex = 8;
-            this.btnCerrar.Text = "Cerrar sesión";
-            this.btnCerrar.UseVisualStyleBackColor = false;
-            this.btnCerrar.Click += new System.EventHandler(this.button3_Click);
+            this.btnReportePDF.BackColor = System.Drawing.Color.White;
+            this.btnReportePDF.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnReportePDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReportePDF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportePDF.ForeColor = System.Drawing.Color.Black;
+            this.btnReportePDF.Image = ((System.Drawing.Image)(resources.GetObject("btnReportePDF.Image")));
+            this.btnReportePDF.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnReportePDF.Location = new System.Drawing.Point(16, 269);
+            this.btnReportePDF.Name = "btnReportePDF";
+            this.btnReportePDF.Size = new System.Drawing.Size(176, 54);
+            this.btnReportePDF.TabIndex = 10;
+            this.btnReportePDF.Text = " Reporte ventas";
+            this.btnReportePDF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReportePDF.UseVisualStyleBackColor = false;
+            this.btnReportePDF.Click += new System.EventHandler(this.btnReportePDF_Click);
             // 
             // button1
             // 
@@ -163,6 +164,23 @@
             this.btnCompras.Text = "Compras";
             this.btnCompras.UseVisualStyleBackColor = false;
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.Color.White;
+            this.btnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.ForeColor = System.Drawing.Color.Black;
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCerrar.Location = new System.Drawing.Point(507, 390);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(158, 38);
+            this.btnCerrar.TabIndex = 8;
+            this.btnCerrar.Text = "Cerrar sesión";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.button3_Click);
+            // 
             // btnVentas
             // 
             this.btnVentas.BackColor = System.Drawing.Color.White;
@@ -176,6 +194,7 @@
             this.btnVentas.TabIndex = 3;
             this.btnVentas.Text = "Ventas";
             this.btnVentas.UseVisualStyleBackColor = false;
+            this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
             // btnProductos
             // 
@@ -281,24 +300,6 @@
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
             this.toolStripDropDownButton1.Size = new System.Drawing.Size(29, 22);
             this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
-            // 
-            // btnReportePDFF
-            // 
-            this.btnReportePDFF.BackColor = System.Drawing.Color.White;
-            this.btnReportePDFF.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnReportePDFF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReportePDFF.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportePDFF.ForeColor = System.Drawing.Color.Black;
-            this.btnReportePDFF.Image = ((System.Drawing.Image)(resources.GetObject("btnReportePDFF.Image")));
-            this.btnReportePDFF.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReportePDFF.Location = new System.Drawing.Point(16, 337);
-            this.btnReportePDFF.Name = "btnReportePDFF";
-            this.btnReportePDFF.Size = new System.Drawing.Size(176, 55);
-            this.btnReportePDFF.TabIndex = 11;
-            this.btnReportePDFF.Text = "Reporte compras";
-            this.btnReportePDFF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportePDFF.UseVisualStyleBackColor = false;
-            this.btnReportePDFF.Click += new System.EventHandler(this.btnReportePDFF_Click);
             // 
             // FrmMenu
             // 

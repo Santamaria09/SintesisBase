@@ -1,5 +1,6 @@
 ﻿using SintesisBase.CapaDatos;
 using SintesisBase.CapaEntidades;
+using SintesisBase.CapaNegocio;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -149,7 +150,7 @@ namespace SintesisBase.CapaRepresentacion
             decimal SubTotal = Precio * Cantidad;
 
             dvgDp.Rows.Add(
-                IdProducto, Nombre, Cantidad, Precio, SubTotal);
+                Id_Producto, Nombre, Cantidad, Precio, SubTotal);
 
             RecalcularTotal();
         }
@@ -227,7 +228,112 @@ namespace SintesisBase.CapaRepresentacion
                 RecalcularTotal();
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (dvgDp.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Seleccione una fila para eliminar");
+                return;
+            }
+
+            dvgDp.Rows.RemoveAt(dvgDp.SelectedRows[0].Index);
+            RecalcularTotal();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dvgDp.Rows.Count == 0)
+                {
+                    MessageBox.Show("La venta no tiene productos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                //Crear la venta
+                Venta venta = new Venta
+                {
+                    Fecha = dtpT.Value,
+                    Total = ObtenerTotalVenta(),
+                    Id_MetodoPago = Convert.ToInt32(cboT.SelectedValue),
+                    Id_Cliente = Convert.ToInt32(cboC.SelectedValue),
+
+
+                };
+
+                //Lista de detalles
+                List<VentaItem> detalles = new List<VentaItem>();
+                foreach (DataGridViewRow row in dvgDp.Rows)
+                {
+                    detalles.Add(new VentaItem()
+                    {
+                        Id_Producto = Convert.ToInt32(row.Cells["Id_Producto"].Value),
+                        Cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value),
+                        PrecioUnitario = Convert.ToDecimal(row.Cells["PrecioUnitario"].Value),
+                        EsSubsidio = Convert.ToBoolean(row.Cells["EsSubsidio"].Value),
+                        SubTotal = Convert.ToDecimal(row.Cells["SubTotal"].Value)
+                    });
+                }
+                var validacion = VentasBLL.ValidarVenta(venta, detalles);
+                if (!validacion.Exito)
+                {
+                    MessageBox.Show(validacion.Mensaje, "Error de validacion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+
+                }
+
+                //Guardar
+                var resultado = VentaDALL.RegistrarVenta(venta, detalles);
+                if (resultado.Exito)
+                {
+                    MessageBox.Show(resultado.Mensaje, "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LimpiarFormulario();
+
+                }
+                else
+                {
+                    MessageBox.Show(resultado.Mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error inesperado:" + ex.Message);
+            }
+        }
+        private decimal ObtenerTotalVenta()
+        {
+            decimal total = 0;
+
+            foreach (DataGridViewRow row in dvgDp.Rows)
+                total += Convert.ToDecimal(row.Cells["SubTotal"].Value);
+
+            return total;
+        }
+
+        private void LimpiarFormulario()
+        {
+            dvgDp.Rows.Clear();
+            label5.Text = "Total: $0.00";
+            txtpp.Clear();
+            CargarProductos(string.Empty);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            dvgDp.Rows.Clear();
+            RecalcularTotal();
+        }
     }
+
+
+        
+    
     
     
 }

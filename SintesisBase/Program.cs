@@ -17,7 +17,7 @@ namespace SintesisBase
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GestionProveedor());
+            Application.Run(new FrmClientes());
         }
     }
 }

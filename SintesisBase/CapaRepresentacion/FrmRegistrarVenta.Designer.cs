@@ -37,6 +37,8 @@
             this.cboC = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.chkA = new System.Windows.Forms.CheckBox();
+            this.btnAp = new System.Windows.Forms.Button();
             this.dvgBp = new System.Windows.Forms.DataGridView();
             this.btnpp = new System.Windows.Forms.Button();
             this.txtpp = new System.Windows.Forms.TextBox();
@@ -49,8 +51,6 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnAp = new System.Windows.Forms.Button();
-            this.chkA = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgBp)).BeginInit();
@@ -155,6 +155,26 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Productos:";
             // 
+            // chkA
+            // 
+            this.chkA.AutoSize = true;
+            this.chkA.Location = new System.Drawing.Point(310, 264);
+            this.chkA.Name = "chkA";
+            this.chkA.Size = new System.Drawing.Size(77, 25);
+            this.chkA.TabIndex = 12;
+            this.chkA.Text = "Aplicar";
+            this.chkA.UseVisualStyleBackColor = true;
+            // 
+            // btnAp
+            // 
+            this.btnAp.Location = new System.Drawing.Point(100, 259);
+            this.btnAp.Name = "btnAp";
+            this.btnAp.Size = new System.Drawing.Size(120, 32);
+            this.btnAp.TabIndex = 11;
+            this.btnAp.Text = "Registrar";
+            this.btnAp.UseVisualStyleBackColor = true;
+            this.btnAp.Click += new System.EventHandler(this.btnAp_Click);
+            // 
             // dvgBp
             // 
             this.dvgBp.BackgroundColor = System.Drawing.SystemColors.Control;
@@ -216,6 +236,7 @@
             this.button5.TabIndex = 10;
             this.button5.Text = "Limpiar todo";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -225,6 +246,7 @@
             this.button4.TabIndex = 9;
             this.button4.Text = "Eliminar una fila";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // dvgDp
             // 
@@ -249,26 +271,27 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(287, 14);
+            this.button6.Location = new System.Drawing.Point(632, 483);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(120, 32);
             this.button6.TabIndex = 10;
             this.button6.Text = "Registrar";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(880, 483);
+            this.button7.Location = new System.Drawing.Point(880, 481);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(120, 34);
             this.button7.TabIndex = 11;
             this.button7.Text = "Cerrar";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Gainsboro;
-            this.groupBox4.Controls.Add(this.button6);
             this.groupBox4.Controls.Add(this.label5);
             this.groupBox4.Location = new System.Drawing.Point(45, 470);
             this.groupBox4.Name = "groupBox4";
@@ -277,32 +300,13 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Total:";
             // 
-            // btnAp
-            // 
-            this.btnAp.Location = new System.Drawing.Point(100, 259);
-            this.btnAp.Name = "btnAp";
-            this.btnAp.Size = new System.Drawing.Size(120, 32);
-            this.btnAp.TabIndex = 11;
-            this.btnAp.Text = "Registrar";
-            this.btnAp.UseVisualStyleBackColor = true;
-            this.btnAp.Click += new System.EventHandler(this.btnAp_Click);
-            // 
-            // chkA
-            // 
-            this.chkA.AutoSize = true;
-            this.chkA.Location = new System.Drawing.Point(310, 264);
-            this.chkA.Name = "chkA";
-            this.chkA.Size = new System.Drawing.Size(77, 25);
-            this.chkA.TabIndex = 12;
-            this.chkA.Text = "Aplicar";
-            this.chkA.UseVisualStyleBackColor = true;
-            // 
             // frmRegistrarVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1037, 540);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

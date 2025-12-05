@@ -50,15 +50,15 @@ namespace SintesisBase
         {
             FrmClientes frm = new FrmClientes();
             frm.Show();
-            //FrmClientes frm = new FrmClientes();
-            frm.ShowDialog();
+           
 
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-           // FrmProducto frm = new FrmProducto();
-           // frm.Show();
+            FrmAgregarPP frm = new FrmAgregarPP();
+            frm.Show();
+           
         }
 
         private void btnInventario_Click(object sender, EventArgs e)
@@ -134,6 +134,12 @@ namespace SintesisBase
             FrmReporteCompras frm = new FrmReporteCompras();
             frm.ShowDialog();
 
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            frmRegistrarVenta frm = new frmRegistrarVenta();
+            frm.ShowDialog();
         }
     }
 }
