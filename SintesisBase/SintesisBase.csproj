@@ -176,6 +176,12 @@
     <Compile Include="CapaRepresentacion\FrmDetalleVenta.Designer.cs">
       <DependentUpon>FrmDetalleVenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="CapaRepresentacion\FrmNuevoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaRepresentacion\FrmNuevoUsuario.Designer.cs">
+      <DependentUpon>FrmNuevoUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapaRepresentacion\FrmProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
