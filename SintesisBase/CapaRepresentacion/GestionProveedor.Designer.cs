@@ -80,7 +80,7 @@
             this.panel1.Controls.Add(this.btnEp);
             this.panel1.Location = new System.Drawing.Point(108, 322);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(580, 97);
+            this.panel1.Size = new System.Drawing.Size(580, 88);
             this.panel1.TabIndex = 10;
             // 
             // btnVp

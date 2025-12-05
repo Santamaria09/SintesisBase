@@ -39,15 +39,13 @@
             this.btnGuardarCC = new System.Windows.Forms.Button();
             this.btnCancelarCC = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.chkSubsidio = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(98, 99);
+            this.label3.Location = new System.Drawing.Point(45, 106);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 25);
             this.label3.TabIndex = 4;
@@ -57,7 +55,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(101, 264);
+            this.label4.Location = new System.Drawing.Point(43, 216);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 25);
             this.label4.TabIndex = 5;
@@ -67,7 +65,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(101, 181);
+            this.label5.Location = new System.Drawing.Point(415, 106);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 25);
             this.label5.TabIndex = 9;
@@ -77,7 +75,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(101, 335);
+            this.label6.Location = new System.Drawing.Point(415, 216);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 25);
             this.label6.TabIndex = 10;
@@ -86,7 +84,7 @@
             // txtNombreCC
             // 
             this.txtNombreCC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreCC.Location = new System.Drawing.Point(223, 99);
+            this.txtNombreCC.Location = new System.Drawing.Point(146, 106);
             this.txtNombreCC.Name = "txtNombreCC";
             this.txtNombreCC.Size = new System.Drawing.Size(223, 29);
             this.txtNombreCC.TabIndex = 11;
@@ -94,7 +92,7 @@
             // txtTelefonoCC
             // 
             this.txtTelefonoCC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefonoCC.Location = new System.Drawing.Point(223, 181);
+            this.txtTelefonoCC.Location = new System.Drawing.Point(509, 106);
             this.txtTelefonoCC.Name = "txtTelefonoCC";
             this.txtTelefonoCC.Size = new System.Drawing.Size(223, 29);
             this.txtTelefonoCC.TabIndex = 12;
@@ -102,7 +100,7 @@
             // txtDireccionCC
             // 
             this.txtDireccionCC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccionCC.Location = new System.Drawing.Point(223, 264);
+            this.txtDireccionCC.Location = new System.Drawing.Point(145, 216);
             this.txtDireccionCC.Name = "txtDireccionCC";
             this.txtDireccionCC.Size = new System.Drawing.Size(223, 29);
             this.txtDireccionCC.TabIndex = 13;
@@ -111,10 +109,11 @@
             // 
             this.chkEstadoCC.AutoSize = true;
             this.chkEstadoCC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkEstadoCC.Location = new System.Drawing.Point(204, 342);
+            this.chkEstadoCC.Location = new System.Drawing.Point(552, 223);
             this.chkEstadoCC.Name = "chkEstadoCC";
-            this.chkEstadoCC.Size = new System.Drawing.Size(15, 14);
+            this.chkEstadoCC.Size = new System.Drawing.Size(83, 25);
             this.chkEstadoCC.TabIndex = 14;
+            this.chkEstadoCC.Text = "ACTIVO";
             this.chkEstadoCC.UseVisualStyleBackColor = true;
             // 
             // btnGuardarCC
@@ -122,9 +121,9 @@
             this.btnGuardarCC.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnGuardarCC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCC.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardarCC.Location = new System.Drawing.Point(103, 429);
+            this.btnGuardarCC.Location = new System.Drawing.Point(163, 315);
             this.btnGuardarCC.Name = "btnGuardarCC";
-            this.btnGuardarCC.Size = new System.Drawing.Size(156, 36);
+            this.btnGuardarCC.Size = new System.Drawing.Size(139, 36);
             this.btnGuardarCC.TabIndex = 15;
             this.btnGuardarCC.Text = "Guardar cliente";
             this.btnGuardarCC.UseVisualStyleBackColor = false;
@@ -135,7 +134,7 @@
             this.btnCancelarCC.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnCancelarCC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarCC.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelarCC.Location = new System.Drawing.Point(342, 429);
+            this.btnCancelarCC.Location = new System.Drawing.Point(494, 315);
             this.btnCancelarCC.Name = "btnCancelarCC";
             this.btnCancelarCC.Size = new System.Drawing.Size(104, 36);
             this.btnCancelarCC.TabIndex = 16;
@@ -147,40 +146,18 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(199, 29);
+            this.lblTitulo.Location = new System.Drawing.Point(324, 35);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(179, 25);
             this.lblTitulo.TabIndex = 17;
             this.lblTitulo.Text = "AGREGAR CLIENTES";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(293, 335);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 25);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Subsidio:";
-            // 
-            // chkSubsidio
-            // 
-            this.chkSubsidio.AutoSize = true;
-            this.chkSubsidio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkSubsidio.Location = new System.Drawing.Point(401, 342);
-            this.chkSubsidio.Name = "chkSubsidio";
-            this.chkSubsidio.Size = new System.Drawing.Size(15, 14);
-            this.chkSubsidio.TabIndex = 19;
-            this.chkSubsidio.UseVisualStyleBackColor = true;
             // 
             // FrmAgregarC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
-            this.ClientSize = new System.Drawing.Size(544, 512);
-            this.Controls.Add(this.chkSubsidio);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(797, 411);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnCancelarCC);
             this.Controls.Add(this.btnGuardarCC);
@@ -214,7 +191,5 @@
         private System.Windows.Forms.Button btnGuardarCC;
         private System.Windows.Forms.Button btnCancelarCC;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox chkSubsidio;
     }
 }

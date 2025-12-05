@@ -13,7 +13,7 @@ namespace SintesisBase.CapaEntidades
         public string Telefono { get; set; }
         public string Direccion { get; set; }
         public bool Estado { get; set; }
-        public bool EsSubsidio { get; set; }
+       
         
     }
 }

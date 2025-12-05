@@ -48,19 +48,23 @@
   <ItemGroup>
     <Compile Include="CapaDatos\ClientesDAL.cs" />
     <Compile Include="CapaDatos\Conexion.cs" />
+    <Compile Include="CapaDatos\InventarioDAL.cs" />
     <Compile Include="CapaDatos\MarcaDAL.cs" />
+    <Compile Include="CapaDatos\MetodoPagoDAL.cs" />
     <Compile Include="CapaDatos\ProveedorDAL.cs" />
+    <Compile Include="CapaDatos\VentaDALL.cs" />
     <Compile Include="CapaEntidades\Compra.cs" />
     <Compile Include="CapaEntidades\CompraItem.cs" />
     <Compile Include="CapaEntidades\EstadoActual.cs" />
-    <Compile Include="CapaEntidades\Facturacion.cs" />
     <Compile Include="CapaEntidades\Inventario.cs" />
+    <Compile Include="CapaEntidades\MetodoPago.cs" />
     <Compile Include="CapaEntidades\Producto.cs" />
     <Compile Include="CapaDatos\ProductoDAL.cs" />
     <Compile Include="CapaEntidades\Clientes.cs" />
     <Compile Include="CapaEntidades\Marca.cs" />
     <Compile Include="CapaEntidades\Proveedor.cs" />
     <Compile Include="CapaEntidades\Rol.cs" />
+    <Compile Include="CapaEntidades\Transacciones .cs" />
     <Compile Include="CapaEntidades\UnidadPeso.cs" />
     <Compile Include="CapaEntidades\Usuario.cs" />
     <Compile Include="CapaEntidades\Validaciones.cs" />
@@ -69,6 +73,7 @@
     <Compile Include="CapaNegocio\ClientesBLL.cs" />
     <Compile Include="CapaNegocio\MarcaBLL.cs" />
     <Compile Include="CapaNegocio\ProveedorBLL.cs" />
+    <Compile Include="CapaNegocio\VentasBLL.cs" />
     <Compile Include="CapaRepresentacion\FrmAgregarC.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,12 +127,6 @@
     </Compile>
     <Compile Include="CapaRepresentacion\FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CapaRepresentacion\FrmDetalleVenta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CapaRepresentacion\FrmDetalleVenta.Designer.cs">
-      <DependentUpon>FrmDetalleVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="CapaRepresentacion\FrmProveedor.cs">
       <SubType>Form</SubType>
@@ -199,9 +198,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CapaRepresentacion\FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CapaRepresentacion\FrmDetalleVenta.resx">
-      <DependentUpon>FrmDetalleVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CapaRepresentacion\FrmProveedor.resx">
       <DependentUpon>FrmProveedor.cs</DependentUpon>

@@ -19,12 +19,11 @@ namespace SintesisBase.CapaRepresentacion
         public int Id { get; set; }
         public string Nombre { get; set; }
         public string Telefono { get; set; }
-        public string Direccion {  get; set; }
+        public string Direccion { get; set; }
         public bool Estado { get; set; }
-        public bool EsSubsidio { get; set; }
 
         ClientesBLL bll = new ClientesBLL();
-     
+
         public FrmAgregarC()
         {
             InitializeComponent();
@@ -44,7 +43,7 @@ namespace SintesisBase.CapaRepresentacion
                 txtTelefonoCC.Text = Telefono;
                 txtDireccionCC.Text = Direccion;
                 chkEstadoCC.Checked = Estado;
-                chkSubsidio.Checked = EsSubsidio;
+               
 
             }
 
@@ -71,7 +70,7 @@ namespace SintesisBase.CapaRepresentacion
                     Telefono = txtTelefonoCC.Text.Trim(),
                     Direccion = txtDireccionCC.Text.Trim(),
                     Estado = chkEstadoCC.Checked,
-                    EsSubsidio = chkSubsidio.Checked
+                    
                 };
                 bll.Guardar(c);
                 MessageBox.Show(Modo == "Nuevo" ? "El cliente ha sido registrado correctamente" : "Los cambios han sido guardados correctamente", "Operacion Exitosa",
@@ -86,6 +85,13 @@ namespace SintesisBase.CapaRepresentacion
             {
                 MessageBox.Show("Ocurrio un error inesperado:\n" + ex.Message, "Error general", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void chkSubsidio_CheckedChanged(object sender, EventArgs e)
+        {
+
+
+
         }
     }
 }

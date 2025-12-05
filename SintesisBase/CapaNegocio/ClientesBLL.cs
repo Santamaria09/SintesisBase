@@ -25,12 +25,18 @@ namespace SintesisBase.CapaNegocio
             if (string.IsNullOrWhiteSpace(c.Nombre))
                 throw new Exception("El Nombre del Cliente es obligatorio");
 
-            if (c.Telefono.Length  <= 8)
-                throw new Exception("El telefono no debe superar 8 digitos");
+            if (c.Telefono.Length  == 8)
+            {
+                MessageBox.Show("Telefono Valido");
+            }
+            else
+            {
+                MessageBox.Show("El telefono debe contener 8 digitos");
+            }
 
             if (c.Id == 0)
             {
-               
+
 
                 MessageBox.Show("Cliente registrado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return dal.Insertar(c);
@@ -40,7 +46,7 @@ namespace SintesisBase.CapaNegocio
                 dal.Actualizar(c);
                 MessageBox.Show("El registro ha sido actualizado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return c.Id;
-    
+
             }
         }
 

@@ -29,44 +29,45 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.dtpT = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cboT = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cboC = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dvgBp = new System.Windows.Forms.DataGridView();
+            this.btnpp = new System.Windows.Forms.Button();
+            this.txtpp = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.dvgDp = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnAp = new System.Windows.Forms.Button();
+            this.chkA = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgBp)).BeginInit();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgDp)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.dtpT);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.cboT);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cboC);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(22, 12);
             this.groupBox1.Name = "groupBox1";
@@ -74,6 +75,58 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos generales:";
+            // 
+            // dtpT
+            // 
+            this.dtpT.Location = new System.Drawing.Point(778, 29);
+            this.dtpT.Name = "dtpT";
+            this.dtpT.Size = new System.Drawing.Size(200, 29);
+            this.dtpT.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(719, 34);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 21);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Fecha:";
+            // 
+            // cboT
+            // 
+            this.cboT.FormattingEnabled = true;
+            this.cboT.Location = new System.Drawing.Point(512, 28);
+            this.cboT.Name = "cboT";
+            this.cboT.Size = new System.Drawing.Size(180, 29);
+            this.cboT.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(403, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 21);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Tipo de pago:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(298, 22);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 38);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Registrar ";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // cboC
+            // 
+            this.cboC.FormattingEnabled = true;
+            this.cboC.Location = new System.Drawing.Point(100, 28);
+            this.cboC.Name = "cboC";
+            this.cboC.Size = new System.Drawing.Size(180, 29);
+            this.cboC.TabIndex = 2;
             // 
             // label1
             // 
@@ -86,65 +139,14 @@
             this.label1.Text = "Cliente:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(100, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(180, 29);
-            this.comboBox1.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(298, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 38);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Registrar ";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(403, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tipo de pago:";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(512, 28);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(180, 29);
-            this.comboBox2.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(719, 34);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 21);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Fecha:";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(778, 29);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 29);
-            this.dateTimePicker1.TabIndex = 5;
-            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.chkA);
+            this.groupBox2.Controls.Add(this.btnAp);
+            this.groupBox2.Controls.Add(this.dvgBp);
+            this.groupBox2.Controls.Add(this.btnpp);
+            this.groupBox2.Controls.Add(this.txtpp);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(22, 128);
             this.groupBox2.Name = "groupBox2";
@@ -152,6 +154,36 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Productos:";
+            // 
+            // dvgBp
+            // 
+            this.dvgBp.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dvgBp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgBp.Location = new System.Drawing.Point(23, 82);
+            this.dvgBp.Name = "dvgBp";
+            this.dvgBp.ReadOnly = true;
+            this.dvgBp.Size = new System.Drawing.Size(440, 150);
+            this.dvgBp.TabIndex = 8;
+            this.dvgBp.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgBp_CellDoubleClick);
+            // 
+            // btnpp
+            // 
+            this.btnpp.Location = new System.Drawing.Point(361, 28);
+            this.btnpp.Name = "btnpp";
+            this.btnpp.Size = new System.Drawing.Size(89, 36);
+            this.btnpp.TabIndex = 6;
+            this.btnpp.Text = "Buscar";
+            this.btnpp.UseVisualStyleBackColor = true;
+            this.btnpp.Click += new System.EventHandler(this.btnpp_Click);
+            // 
+            // txtpp
+            // 
+            this.txtpp.Location = new System.Drawing.Point(175, 32);
+            this.txtpp.Name = "txtpp";
+            this.txtpp.Size = new System.Drawing.Size(142, 29);
+            this.txtpp.TabIndex = 7;
+            this.txtpp.TextChanged += new System.EventHandler(this.txtpp_TextChanged);
+            this.txtpp.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtpp_KeyDown);
             // 
             // label4
             // 
@@ -163,53 +195,27 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Buscar producto:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(175, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(142, 29);
-            this.textBox1.TabIndex = 7;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(361, 28);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 36);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Buscar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 82);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(440, 150);
-            this.dataGridView1.TabIndex = 8;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(138, 255);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(169, 41);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Enviar detalle";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Gainsboro;
             this.groupBox3.Controls.Add(this.button5);
             this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.dataGridView2);
+            this.groupBox3.Controls.Add(this.dvgDp);
             this.groupBox3.Location = new System.Drawing.Point(534, 128);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(481, 317);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Detales de venta:";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(235, 255);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(169, 41);
+            this.button5.TabIndex = 10;
+            this.button5.Text = "Limpiar todo";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -220,24 +226,16 @@
             this.button4.Text = "Eliminar una fila";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // dvgDp
             // 
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(38, 50);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(401, 150);
-            this.dataGridView2.TabIndex = 8;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(235, 255);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(169, 41);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "Limpiar todo";
-            this.button5.UseVisualStyleBackColor = true;
+            this.dvgDp.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dvgDp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgDp.Location = new System.Drawing.Point(38, 50);
+            this.dvgDp.Name = "dvgDp";
+            this.dvgDp.ReadOnly = true;
+            this.dvgDp.Size = new System.Drawing.Size(401, 150);
+            this.dvgDp.TabIndex = 8;
+            this.dvgDp.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgDp_CellEndEdit);
             // 
             // label5
             // 
@@ -279,6 +277,26 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Total:";
             // 
+            // btnAp
+            // 
+            this.btnAp.Location = new System.Drawing.Point(100, 259);
+            this.btnAp.Name = "btnAp";
+            this.btnAp.Size = new System.Drawing.Size(120, 32);
+            this.btnAp.TabIndex = 11;
+            this.btnAp.Text = "Registrar";
+            this.btnAp.UseVisualStyleBackColor = true;
+            this.btnAp.Click += new System.EventHandler(this.btnAp_Click);
+            // 
+            // chkA
+            // 
+            this.chkA.AutoSize = true;
+            this.chkA.Location = new System.Drawing.Point(310, 264);
+            this.chkA.Name = "chkA";
+            this.chkA.Size = new System.Drawing.Size(77, 25);
+            this.chkA.TabIndex = 12;
+            this.chkA.Text = "Aplicar";
+            this.chkA.UseVisualStyleBackColor = true;
+            // 
             // frmRegistrarVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -294,13 +312,14 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmRegistrarVenta";
             this.Text = "RegistrarVenta";
+            this.Load += new System.EventHandler(this.frmRegistrarVenta_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgBp)).EndInit();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgDp)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
@@ -312,24 +331,25 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboT;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox cboC;
+        private System.Windows.Forms.DateTimePicker dtpT;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dvgBp;
+        private System.Windows.Forms.Button btnpp;
+        private System.Windows.Forms.TextBox txtpp;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dvgDp;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btnAp;
+        private System.Windows.Forms.CheckBox chkA;
     }
 }

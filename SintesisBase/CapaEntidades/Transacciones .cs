@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace SintesisBase.CapaEntidades
 {
-    public class Inventario
+    public class Transacciones
     {
-        public int Id { get; set; }
-        public DateTime FechaIngreso { get; set; }
-        public int Id_Producto { get; set; }
+        public bool Exito { get; set; }
+        public string Mensaje { get; set; }
     }
 }

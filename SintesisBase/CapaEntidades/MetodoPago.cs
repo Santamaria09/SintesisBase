@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace SintesisBase.CapaEntidades
 {
-    public class Facturacion
+    public class MetodoPago
     {
         public int Id { get; set; }
-        public int Id_Venta { get; set; }
-        public decimal Fecha { get; set; }
-
+        public string Nombre { get; set; }
     }
 }

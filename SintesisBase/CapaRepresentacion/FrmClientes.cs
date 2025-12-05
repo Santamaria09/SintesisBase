@@ -92,7 +92,7 @@ namespace SintesisBase.CapaRepresentacion
             frm.Telefono = dvgClientes.CurrentRow.Cells["Telefono"].Value.ToString();
             frm.Direccion = dvgClientes.CurrentRow.Cells["Direccion"].Value.ToString();
             frm.Estado= Convert.ToBoolean(dvgClientes.CurrentRow.Cells["Estado"].Value);
-            frm.EsSubsidio = Convert.ToBoolean(dvgClientes.CurrentRow.Cells["EsSubsidio"].Value);
+           
 
             frm.ShowDialog();
             CargarDatos();

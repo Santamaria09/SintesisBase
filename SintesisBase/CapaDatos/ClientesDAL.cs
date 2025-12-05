@@ -18,7 +18,7 @@ namespace SintesisBase.CapaDatos
             DataTable dt = new DataTable();
             using (SqlConnection con = new SqlConnection(Conexion.Cadena))
             {
-                string sql = "SELECT Id, Nombre, Telefono, Direccion, Estado, EsSubsidio FROM Cliente";
+                string sql = "SELECT Id, Nombre, Telefono, Direccion, Estado FROM Cliente";
                 using (SqlCommand cmd = new SqlCommand(sql, con))
                 {
                     con.Open();
@@ -32,14 +32,13 @@ namespace SintesisBase.CapaDatos
         {
             using (SqlConnection con = new SqlConnection(Conexion.Cadena))
             {
-                string sql = "INSERT INTO Cliente (Nombre, Telefono, Direccion, Estado, EsSubsidio) values (@nombre, @telefono, @direccion, @estado, @essubsidio); SELECT SCOPE_IDENTITY();";
+                string sql = "INSERT INTO Cliente (Nombre, Telefono, Direccion, Estado) values (@nombre, @telefono, @direccion, @estado); SELECT SCOPE_IDENTITY();";
                 using (SqlCommand cmd = new SqlCommand(sql, con))
                 {
                     cmd.Parameters.AddWithValue("@nombre", c.Nombre);
                     cmd.Parameters.AddWithValue("@telefono", c.Telefono);
                     cmd.Parameters.AddWithValue("@direccion", c.Direccion);
                     cmd.Parameters.AddWithValue("@estado", c.Estado);
-                    cmd.Parameters.AddWithValue("@essubsidio", c.EsSubsidio);
                     con.Open();
                     return Convert.ToInt32(cmd.ExecuteScalar());
                 }
@@ -52,7 +51,7 @@ namespace SintesisBase.CapaDatos
         {
             using (SqlConnection con = new SqlConnection(Conexion.Cadena))
             {
-                string sql = "UPDATE Cliente SET Nombre=@nombre, Telefono= @telefono, Direccion=@direccion, Estado=@estado, EsSubsidio=@essubsidio WHERE Id=@id;";
+                string sql = "UPDATE Cliente SET Nombre=@nombre, Telefono= @telefono, Direccion=@direccion, Estado=@estado WHERE Id=@id;";
                 using (SqlCommand cmd = new SqlCommand(sql, con))
                 {
                     cmd.Parameters.AddWithValue("@id", c.Id);
@@ -60,7 +59,6 @@ namespace SintesisBase.CapaDatos
                     cmd.Parameters.AddWithValue("@telefono", c.Telefono);
                     cmd.Parameters.AddWithValue("@direccion", c.Direccion);
                     cmd.Parameters.AddWithValue("@estado", c.Estado);
-                    cmd.Parameters.AddWithValue("@essubsidio", c.EsSubsidio);
                     con.Open();
                     return cmd.ExecuteNonQuery() > 0;
                 }
@@ -87,7 +85,7 @@ namespace SintesisBase.CapaDatos
             DataTable dt = new DataTable();
             using (SqlConnection con = new SqlConnection(Conexion.Cadena))
             {
-                string sql = @"SELECT Id, Nombre, Telefono, Direccion, Estado, EsSubsidio FROM Cliente WHERE Nombre LIKE @Filtro or Telefono LIKE @Filtro";
+                string sql = @"SELECT Id, Nombre, Telefono, Direccion, Estado FROM Cliente WHERE Nombre LIKE @Filtro or Telefono LIKE @Filtro";
                 using (SqlCommand cmd = new SqlCommand(sql, con))
                 {
                     cmd.Parameters.AddWithValue("@Filtro", "%" + Filtro + "%");
@@ -118,8 +116,7 @@ namespace SintesisBase.CapaDatos
                                 Nombre = dr["Nombre"].ToString(),
                                 Telefono = dr["Telefono"].ToString(),
                                 Direccion = dr["Direccion"].ToString(),
-                                Estado = Convert.ToBoolean(dr["Estado"]),
-                                EsSubsidio = Convert.ToBoolean(dr["EsSubsidio"])
+                                Estado = Convert.ToBoolean(dr["Estado"]),                                
 
                             });
                         }
